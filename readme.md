@@ -1,3 +1,5 @@
+[![basicauthentication MyGet Build Status](https://www.myget.org/BuildSource/Badge/basicauthentication?identifier=538e9ae0-25ff-4cab-9afc-6de0579dabf7)](https://www.myget.org/)
+
 # BasicAuthentication
 
 This repository is an attempt at an easy way to add authentication into an Asp.Net web site without having to guess which packages to include or which files to create.

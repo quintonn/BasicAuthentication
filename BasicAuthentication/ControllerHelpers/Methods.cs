@@ -7,6 +7,7 @@ using BasicAuthentication.Users;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Principal;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Http;
@@ -18,7 +19,11 @@ namespace BasicAuthentication.ControllerHelpers
     {
         public static async Task<ICoreIdentityUser> GetLoggedInUserAsync(ICoreUserContext userContext)
         {
-            var userIdentity = HttpContext.Current?.User?.Identity;
+            IIdentity userIdentity = null;
+            if (HttpContext.Current != null && HttpContext.Current.User != null)
+            {
+                userIdentity = HttpContext.Current.User.Identity;
+            }
             if (userIdentity == null)
             {
                 return null;
