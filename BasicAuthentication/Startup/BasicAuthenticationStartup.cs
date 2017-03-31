@@ -7,6 +7,7 @@ using Owin;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Web.Http;
 
 [assembly: OwinStartup(typeof(BasicAuthentication.Startup.BasicAuthenticationStartup))]
 namespace BasicAuthentication.Startup
@@ -30,6 +31,9 @@ namespace BasicAuthentication.Startup
 
             // Register HttpConfiguration
             var config = new System.Web.Http.HttpConfiguration();
+
+            config.MapHttpAttributeRoutes();
+
             foreach (var sType in startupInstances)
             {
                 sType.Register(config, app);
