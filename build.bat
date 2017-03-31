@@ -14,6 +14,9 @@ if "%nuget%" == "" (
 	set nuget=nuget
 )
 
+REM Package restore
+call %NuGet% restore BasicAuthentication\packages.config -OutputDirectory packages -NonInteractive
+
 %WINDIR%\Microsoft.NET\Framework\v4.0.30319\msbuild .\BasicAuthentication.sln /p:Configuration="%config%" /m /v:M /fl /flp:LogFile=msbuild.log;Verbosity=diag /nr:false
 REM %WINDIR%\Microsoft.NET\Framework64\v4.0.30319\msbuild BasicAuthentication.sln /p:Configuration="%config%" /m /v:M /fl /flp:LogFile=msbuild.log;Verbosity=diag /nr:false
 
