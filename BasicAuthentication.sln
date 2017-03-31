@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicAuthentication", "BasicAuthentication\BasicAuthentication.csproj", "{6408E8E4-1D66-4B44-A3A8-B3FD391FAF72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicAuthentication.WebTest", "BasicAuthentication.WebTest\BasicAuthentication.WebTest.csproj", "{FF7AE6BA-DBD0-4C95-A33A-91DE141C3AAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6408E8E4-1D66-4B44-A3A8-B3FD391FAF72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6408E8E4-1D66-4B44-A3A8-B3FD391FAF72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6408E8E4-1D66-4B44-A3A8-B3FD391FAF72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6408E8E4-1D66-4B44-A3A8-B3FD391FAF72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF7AE6BA-DBD0-4C95-A33A-91DE141C3AAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF7AE6BA-DBD0-4C95-A33A-91DE141C3AAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF7AE6BA-DBD0-4C95-A33A-91DE141C3AAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF7AE6BA-DBD0-4C95-A33A-91DE141C3AAC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

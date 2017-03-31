@@ -4,7 +4,6 @@ hg/
 .hg
 .hgignore
 .vs/
-*.sln
 *.suo
 packages/
 BasicAuthentication.WebTest/bin/
