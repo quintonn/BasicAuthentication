@@ -32,7 +32,7 @@ namespace BasicAuthentication.Security
             this.OnValidateClientRedirectUri = ValidateClientRedirectUri;
         }
 
-        private Task ValidateClientRedirectUri(OAuthValidateClientRedirectUriContext context)
+        public override Task ValidateClientRedirectUri(OAuthValidateClientRedirectUriContext context)
         {
             return Task.FromResult(0);
         }

@@ -10,3 +10,6 @@ packages/
 BasicAuthentication.WebTest/bin/
 BasicAuthentication.WebTest/obj/
 nuget publish.bat
+Build/
+Backup/
+msbuild.log
