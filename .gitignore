@@ -1,3 +1,11 @@
-BasicAuthentication\bin\
-BasicAuthentication\obj\
-hg\
+BasicAuthentication/bin/
+BasicAuthentication/obj/
+hg/
+.hg
+.hgignore
+.vs/
+*.sln
+*.suo
+packages/
+BasicAuthentication.WebTest/bin/
+BasicAuthentication.WebTest/obj/
