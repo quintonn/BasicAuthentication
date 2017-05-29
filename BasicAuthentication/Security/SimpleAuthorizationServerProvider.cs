@@ -63,7 +63,7 @@ namespace BasicAuthentication.Security
 
             var validated = context.Validated();
 
-            return Task.FromResult<object>(null);
+            return Task.FromResult<object>(0);
         }
 
         public override async Task GrantResourceOwnerCredentials(OAuthGrantResourceOwnerCredentialsContext context)
