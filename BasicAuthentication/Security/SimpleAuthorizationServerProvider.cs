@@ -61,7 +61,7 @@ namespace BasicAuthentication.Security
                 return Task.FromResult<object>(null);
             }
 
-            context.Validated();
+            var validated = context.Validated();
 
             return Task.FromResult<object>(null);
         }
@@ -131,7 +131,7 @@ namespace BasicAuthentication.Security
 
             var ticket = new AuthenticationTicket(identity, props);
 
-            context.Validated(ticket);
+            var validated = context.Validated(ticket);
         }
 
         public override Task GrantRefreshToken(OAuthGrantRefreshTokenContext context)
@@ -150,7 +150,7 @@ namespace BasicAuthentication.Security
             var newIdentity = new ClaimsIdentity(context.Ticket.Identity);
             
             var newTicket = new AuthenticationTicket(newIdentity, context.Ticket.Properties);
-            context.Validated(newTicket);
+            var validated = context.Validated(newTicket);
 
             return Task.FromResult<object>(null);
         }
